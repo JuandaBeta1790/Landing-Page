@@ -16,7 +16,7 @@ const { name, visual, occupation, quote } = Astro.props;
 <div
   class="flex w-full max-w-[26rem] flex-col rounded-xl dark:bg-base-dark-800 shadow-lg dark:shadow-dark ring-1 ring-black/5"
 >
-  <div class="flex flex-row items-center overflow-hidden p-4 gap-4">
+  <div class="flex flex-row items-center overflow-hidden p-2 gap-5">
     <div class="shrink-0 h-[58px] w-[58px] rounded-full overflow-hidden">
       <LazyImage
         src={visual}
@@ -32,7 +32,8 @@ const { name, visual, occupation, quote } = Astro.props;
         >
           {name}
         </h5>
-        <div class="5 flex items-center gap-0">
+        <!-- Estrellas en un renglón diferente -->
+        <div class="flex mt-20">
           {
             [...Array(5).keys()].map(() => {
               return (
@@ -54,15 +55,13 @@ const { name, visual, occupation, quote } = Astro.props;
         </div>
       </div>
       <p
-        class="block font-light leading-relaxed text-primary-900 dark:text-primary-300/50"
+        class="block font-light leading-relaxed text-primary-900 dark:text-primary-300/50 "
       >
         {occupation}
       </p>
     </div>
   </div>
-  <div class="p-4">
-    <p class="block font-sans font-light leading-relaxed italic">
-      "{quote}"
-    </p>
+  
   </div>
 </div>
+

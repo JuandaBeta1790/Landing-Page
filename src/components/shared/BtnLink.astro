@@ -24,14 +24,11 @@ const getThemeStyle = (variant: "primary" | "secondary" | "cta") => {
 };
 
 const getTextColor = (variant: "primary" | "secondary" | "cta") => {
-  if (variant === "primary") {
-    return "text-accent font-medium";
-  }
-  if (variant === "secondary") {
+  if (variant === "primary" || variant === "secondary") {
     return "text-accent font-medium";
   }
   if (variant === "cta") {
-    return "text-accent font-medium";
+    return "text-white font-medium"; // Contraste con el fondo naranja
   }
   return "";
 };

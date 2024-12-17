@@ -14,7 +14,7 @@ const { className } = Astro.props;
 
 <section id="projects" class=`${className}`>
   <Container
-    className="mx-auto flex flex-col items-center justify-center text-center"
+    className="mx-auto flex flex-col items-center justify-center text-center "
   >
     <Title2>{projectsSection.title}</Title2>
     <SubTitle2>
@@ -23,7 +23,7 @@ const { className } = Astro.props;
     </SubTitle2>
   </Container>
   <Container>
-    <div class="mt-8 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+    <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-5 text-justify">
       {
         projectsSection.projects.map((project) => {
           return (

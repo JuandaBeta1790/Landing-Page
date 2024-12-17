@@ -1,6 +1,6 @@
 ---
 import { Image, Picture } from "astro:assets";
-import heroImg from "./assets/wind3.jpg";
+import Ocean from "./public/images/Ocean.png";
 import CtaButton from "../../shared/CtaButton.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle from "../../shared/SubTitle.astro";
@@ -8,14 +8,15 @@ import Title from "../../shared/Title.astro";
 import LazyImage from "../../shared/LazyImage.astro";
 
 const heroSection = {
-  headline1: "Powering",
-  headline2: "Tomorrow,",
-  headline3: "Sustainably",
-  headline4: "Today!",
-  subheading1: "Join us in the green energy revolution",
-  subheading2: "and be part of a sustainable future",
-  subheading3: "for generations to come.",
-  buttonText: "Get Powered Today!",
+  headline1: "¿Por Qué?",
+  
+  headline2: "",
+  headline3: "Telemetrik",
+  headline4: "AWS",
+  subheading1: "En Telemetrik, entendemos que el agua limpia es mucho más que un recurso: es la base de un futuro próspero, una vida saludable y un mundo más justo.",
+  subheading2: "Cada vez que ayudamos a una comunidad a acceder a ella, no solo cambiamos su presente sino que sembramos las semillas de un futuro mejor.",
+  subheading3: "Nuestra misión es asegurar que cada persona sin importar su ubicación, tenga el agua con la calidad necesaria para transformar su vida",
+  buttonText: "Conócenos",
   backgroundImage: "hero-background-image.jpg",
 };
 
@@ -27,32 +28,48 @@ const { className = "" } = Astro.props;
 ---
 
 <section class=`relative  ${className} w-full h-[80vh]` id="hero">
-  <div class="w-full h-[80vh] pt-[100px]">
+  <div class="w-full h-[90vh] pt-[100px]">
     <div
       class="w-full h-full grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900"
     >
-      <div class="justify-center flex flex-col text-center md:ml-auto">
+      <div class="justify-center flex flex-col text-center md:ml-auto ">
         <Title className="">
           {heroSection.headline1}
           <GradiantText
             >{" " + heroSection.headline2}
             <br />
             {" " + heroSection.headline3}
-          </GradiantText>{heroSection.headline4}
+            {" "+ heroSection.headline4}
+          </GradiantText>
         </Title>
-        <SubTitle className=" mt-10 leading-9 italic">
+        <SubTitle className=" mt-10 leading-9  text-center" >
           {heroSection.subheading1}
           <br />
           {heroSection.subheading2}<br />
           {heroSection.subheading3}
         </SubTitle>
-        <div class="pt-10">
-          <CtaButton>{heroSection.buttonText}</CtaButton>
+         <!-- Agregar las imágenes aquí -->
+         <div class="flex justify-center gap-10 mt-10">
+          <div class="relative  overflow-hidden">
+            <img 
+              src="/images/badge.png" 
+              alt="Descripción de la imagen" 
+              class="h-40 w-40" 
+            />
+          </div>
+          <div class="relative  overflow-hidden">
+            <img 
+              src="/images/saas.png" 
+              alt="Descripción de la imagen" 
+              class="h-40 w-40" 
+            />
+          </div>
         </div>
+
       </div>
       <div class="flex relative pt-10 md:p-0">
         <LazyImage
-          src={heroImg}
+          src={Ocean}
           alt="A picture of a wind turbine."
           className="w-full h-full object-cover"
         />

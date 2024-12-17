@@ -1,33 +1,45 @@
-import img1 from "./assets/person1.png";
-import img2 from "./assets/person2.png";
-import img3 from "./assets/person3.png";
+
+import epm from "./public/images/epm.jpg";
+import conconcreto from "./public/images/conconcreto.png";
+import antioquiagold from "./public/images/antioquiagold.png";
+import aassa from "./public/images/aassa1.jpg";
+import AAS from "./public/images/AAS.png";
+
 
 export const testimonialsSection = {
-  title: "What Our Customers Say",
-  subheading1_1: "Hear from Those",
-  subheading1_2: " Who Have Embraced Sustainable Living",
+  title: "Nuestros Clientes",
+  subheading1_1: "Clientes  ",
+  subheading1_2: "que lo dan todo",
   testimonials: [
     {
-      name: "Emily Johnson",
-      visual: img1,
-      occupation: "Homeowner",
+      name: "Grupo EPM",
+      visual: epm,
+      occupation: "",
       quote:
-        "Switching to [Company Name] was the best decision I made. Our home is now powered by clean energy, and I feel great knowing I'm contributing to a healthier planet.",
+        "",
     },
     {
-      name: "Carlos Rodriguez",
-      visual: img2,
-      occupation: "Business Owner",
+      name: "AAS S.A",
+      visual: AAS,
+      occupation: "",
       quote:
-        "As a business owner, sustainability is crucial. [Company Name] provided us with a seamless transition to green energy, and we've seen a positive impact on both the environment and our operating costs.",
+        "",
     },
     {
-      name: "Sophie Chen",
-      visual: img3,
-      occupation: "Environmental Advocate",
+      name: "ConConcreto",
+      visual: conconcreto,
+      occupation: "",
       quote:
-        "I'm passionate about the environment, and [Company Name] aligns perfectly with my values. Their commitment to renewable energy and reducing carbon footprint is commendable.",
+        "",
     },
+    {
+      name: "Antioquia Gold",
+      visual: antioquiagold,
+      occupation: "",
+      quote:
+        "",
+    },
+   
   ],
   visual: "customer-testimonials-image.jpg",
   callToAction: "Join Our Growing Community of Satisfied Customers",

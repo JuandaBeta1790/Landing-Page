@@ -24,7 +24,7 @@ const { className } = Astro.props;
       class="max-w-md mx-auto flex midmd:w-7/12 lg:w-3/4 flex-col align-self-start text-start"
     > -->
     <div
-      class="max-w-md mr-auto w-11/12 flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col"
+      class="max-w-md mr-auto w-11/12 flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col text-justify"
     >
       <SubTitle2>
         {environmentalImpactSection.subheading1_1}
@@ -33,12 +33,12 @@ const { className } = Astro.props;
       <Paragraph>
         {environmentalImpactSection.description}
       </Paragraph>
-      <ul class="mt-8 space-y-4 text-heading-3">
+      <ul class="mt-5 space-y-10 text-heading-5">
         {
           environmentalImpactSection.impactPoints.map((point) => (
             <li>
               <Paragraph className="font-normal">
-                <span class="font-bold bg-box-bg rounded-full w-8 h-8 mr-3 text-primary inline-flex justify-center items-center">
+                <span class="font-bold bg-box-bg rounded-full w-30 h-30 mr-5 text-primary inline-flex justify-center items-center">
                   &checkmark;
                 </span>{" "}
                 {point}

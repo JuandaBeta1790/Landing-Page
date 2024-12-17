@@ -1,56 +1,55 @@
-import img1 from "./assets/solar3.png";
-import img2 from "./assets/wind.png";
-// TODO
-import img3 from "./assets/hydro.png";
-import img4 from "./assets/storage.png";
-// TODO
-import img5 from "./assets/smart-grid.png";
-import img6 from "./assets/green.png";
+
+import api from "./public/images/API.png";
+import lambda from "./public/images/Lambda.png";
+import iot from "./public/images/IoT.png";
+import ec2 from "./public/images/EC2.png";
+import rds from "./public/images/RDS.png";
+import s3 from "./public/images/S3.png";
 
 export const servicesSectionData = {
-  title: "Our Sustainable Energy Solutions",
+  title: "Telemetrik + AWS",
   subheading: {
-    text1_1: "Experience a Revolution in Energy Solutions - ",
-    text1_2: "Embrace Innovation, Embrace Sustainability.",
+    text1_1: "AWS + Telemetrik: ",
+    text1_2: "Soluciones cloud que promueven la innovación para proteger el recurso hídrico",
     text2:
-      "We're here to Empower Your Life and Spaces with Clean, Renewable Energy, Paving the Way for a Brighter and Greener Tomorrow.",
+      "En Telemetrik, maximizamos el poder de Amazon Web Services (AWS) para proporcionar soluciones escalables de infraestructura, almacenamiento y servicios avanzados que aceleran la transformación digital, algunos de los servicios AWS que usamos son:",
   },
   services: [
     {
-      title: "Solar Power Solutions",
+      title: "AWS LAMBDA",
       briefDescription:
-        "Harness the power of the sun with our state-of-the-art solar panels. Generate clean energy for your home or business and reduce your carbon footprint.",
-      visual: img1,
+        "Nuestro motor inteligente de automatización. Como un asistente digital que trabaja 24/7, Lambda ejecuta tareas complejas en segundos, sin que tengas que preocuparte por los servidores. Es como tener un equipo ultrarrápido que hace tu trabajo en segundo plano.",
+      visual: lambda,
     },
     {
-      title: "Wind Energy Harvesting",
+      title: "API GATEWAY",
       briefDescription:
-        "Embrace the power of the wind. Our wind energy solutions provide a sustainable and efficient way to generate electricity, ensuring a greener future.",
-      visual: img2,
+        "El puente digital que conecta diferentes sistemas. Imagina un traductor súper eficiente que permite que distintas aplicaciones hablen entre sí sin problemas, facilitando el intercambio de información como si fuera un juego de niños.",
+      visual: api,
     },
     {
-      title: "Hydropower Systems",
+      title: "IoT CORE",
       briefDescription:
-        "Flow with nature. Our hydropower systems harness the energy of flowing water, delivering reliable and eco-friendly electricity to your doorstep.",
-      visual: img3,
+        "El cerebro conectivo de dispositivos inteligentes. Transforma aparatos comunes en dispositivos inteligentes que pueden comunicarse entre sí y contigo, creando un ecosistema tecnológico donde todo está sincronizado y bajo control.",
+      visual: iot,
     },
     {
-      title: "Energy Storage Solutions",
+      title: "EC2",
       briefDescription:
-        "Store excess energy efficiently. Our cutting-edge energy storage solutions ensure uninterrupted power supply, even during cloudy days or low-wind periods.",
-      visual: img4,
+        "Tu computadora virtual a la carta. Es como tener un superpoder que te permite crear y usar computadoras instantáneamente, escalando recursos según tus necesidades, sin invertir en hardware costoso.",
+      visual: ec2,
     },
     {
-      title: "Smart Grid Technology",
+      title: "RDS",
       briefDescription:
-        "Navigate the future with our smart grid technology. Optimize energy distribution, monitor consumption, and contribute to a more sustainable and efficient energy ecosystem.",
-      visual: img5,
+        "La bóveda digital de tu información. Organiza y protege tus datos como un archivista maestro, permitiéndote guardar, buscar y gestionar información de manera segura y eficiente.",
+      visual: rds,
     },
     {
-      title: "Energy-efficient Lighting",
+      title: "S3",
       briefDescription:
-        "Illuminate your space responsibly. Our energy-efficient lighting solutions provide bright, sustainable, and cost-effective illumination for homes and businesses.",
-      visual: img6,
+        "Tu almacén digital infinito. Un lugar donde puedes guardar cualquier cantidad de archivos, documentos e información, como si tuvieras un bodegón virtual que nunca se llena y al que puedes acceder desde cualquier lugar.",
+      visual: s3,
     },
   ],
   callToAction:

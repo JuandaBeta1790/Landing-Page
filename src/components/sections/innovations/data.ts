@@ -1,29 +1,36 @@
-import imgGrid from "./assets/inno-grid.webp";
-import imgSolar from "./assets/inno-panel.webp";
-import imgWind from "./assets/inno-wind.webp";
+import Retiro from "./public/images/Retiro.png";
+import Palmitas from "./public/images/Palmitas.png";
+import SanCristobal from "./public/images/SanCristobal.png";
+import SanJero from "./public/images/SanJeronimo.png";
+import GrafRet from "./public/images/GrafRetiro.png";
+import grafsan from "./public/images/GrafSanJero1.png";
+import GrafPalm from "./public/images/GrafPalmita.png";
 
 export const innovationsSection = {
-  title: "Latest Innovations",
-  subheading1_1: "Discover Our Cutting-edge",
-  subheading1_2: " Green Energy Technologies",
+  title: "Casos de Éxito",
+  subheading1_1: "Descubre Nuestras Últimas Innovaciones en Tratamiento de Agua",
+  subheading1_2: "Impulsadas por tecnología y la interoperabilidad utilizando los recursos de AWS",
   innovations: [
     {
-      title: "Smart Grid Integration",
+      title: "Planta de tratamiento de agua potable el Retiro",
       description:
-        "Revolutionize energy distribution with our smart grid technology, optimizing efficiency, minimizing wastage, and adapting to demand fluctuations. Stay connected with innovative solutions for a sustainable, cost-effective energy ecosystem. Embrace the future with our cutting-edge smart grid integration, enhancing reliability and paving the way for efficiency and sustainability.",
-      visual: imgGrid,
+        "En Telemetrik, comprendemos los retos que enfrentan las comunidades en el acceso y control del agua potable. Instalamos un sistema de monitoreo inteligente en la bocatoma, planta de tratamiento, tanques de almacenamiento y sistema de bombeo, alimentado por energía solar fotovoltaica. Gracias a la integración de tecnologías de operación e información, los datos de caudal, nivel y presión se envían a servidores en AWS para su análisis en tiempo real. Esto mejoró la toma de decisiones, redujo los tiempos de resolución en un 15%, y permitió un ahorro del 20% en agua y 10% en energía, facilitando además el reporte a las entidades gubernamentales. Con esta solución, logramos optimizar los procesos, mejorar la eficiencia operativa y garantizar el cumplimiento de las normativas ambientales. Nuestro sistema proporciona una visión integral que ayuda a las comunidades a gestionar sus recursos hídricos de manera sostenible.",
+      visual: Retiro,
+      hoverVisual:GrafRet,
     },
     {
-      title: "Advanced Solar Panel Design",
+      title: "Planta de tratamiento de agua potable San Jerónimo",
       description:
-        "Boost solar efficiency with our state-of-the-art solar panel designs. Our innovative technologies capture more sunlight, ensuring maximum energy production for your home or business. Experience enhanced sustainability and increased energy output with our advanced solar solutions.",
-      visual: imgSolar,
+        "El cliente no contaba con información en tiempo real de las variables de su proceso, lo que dificultaba la presentación de informes a las entidades gubernamentales. Para resolver esto, implementamos un sistema de control inteligente en los tanques de almacenamiento, equipándolos con sensores de nivel, caudal y válvulas para evitar el rebose. Además, instalamos equipos de comunicaciones con VPN y un gateway para integrar protocolos de TO a TI, como Modbus RTU y Modbus TCP a MQTT en AWS IoT Core, enviando la información directamente a la nube. Esto permitió un monitoreo eficiente del sistema de potabilización, desde el caudal de entrada hasta los niveles en los tanques y la calidad del agua distribuida, logrando una reducción del 5% en el índice de agua no contabilizada.",
+      visual: SanJero,
+      hoverVisual:grafsan,
     },
     {
-      title: "Next-gen Wind Turbines",
+      title: "Planta de ultrafiltración inteligente Palmitas",
       description:
-        "Transform your wind energy experience with our next-generation wind turbines. Our sleek design, enhanced efficiency, and minimal environmental impact underscore our commitment to innovation. Elevate your sustainable energy journey with cutting-edge wind solutions that prioritize both performance and environmental responsibility.",
-      visual: imgWind,
+        "La planta de tratamiento de agua potable convencional del cliente no contaba con la capacidad ni la instrumentación necesaria para monitorear el proceso y tomar decisiones informadas para reportar a las entidades gubernamentales. En respuesta, Telemetrik instaló una planta de ultrafiltración completamente automatizada, incorporando tecnología avanzada como PLC, variadores de velocidad, sistemas fotovoltaicos, dosificación de químicos, comunicaciones y dispositivos Edge para capturar la información y enviarla a la nube mediante un enlace celular con VPN y MQTT seguro. Esta solución permitió calcular KPIs clave como turbidez promedio diaria, cloro residual y eficiencia de la planta, lo que resultó en un aumento del 5% en la eficiencia de la planta de ultrafiltración, una mejora en la calidad de la turbidez de salida (de 1.5 NTU a 1 NTU) y una reducción del 10% en la dosificación de hipoclorito de sodio, manteniendo la calidad del agua potable conforme a las normas.",
+      visual: Palmitas,
+      hoverVisual:GrafPalm,
     },
   ],
   visual: "innovations-section-image.jpg",

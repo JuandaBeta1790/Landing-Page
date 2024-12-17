@@ -1,32 +1,36 @@
-import img1 from "./assets/solar-person.png";
-import img2 from "./assets/wind-person.png";
-import img3 from "./assets/amazonas2.png";
+
+import Malla2 from "/public/images/MallaCoanda1.jpg";
+import Auto from "/public/images/Auto.jpg";
+import Sensor from "/public/images/Sensor.jpg";
+import Sensores from "/public/images/sensores.jpg";
+import Malla from "/public/images/MallaCoanda.jpg";
+
 
 export const projectsSection = {
-  title: "Featured Projects",
-  subheading1_1: "Explore Our Successful ",
-  subheading1_2: "Green Energy Endeavors",
+  title: "Nuestra Tecnología",
+  subheading1_1: "Soluciones innovadoras para un futuro sostenible",
+  subheading1_2: "Tecnologías que transforman el tratamiento de agua",
   projects: [
     {
-      title: "Solar-Powered Community",
+      title: "Malla Coanda",
       description:
-        "Empowering a community with sustainable solar energy solutions. Learn how [Company Name] brought clean and affordable electricity to homes, schools, and businesses.",
-      location: "Los Angeles, California, USA",
-      visual: img1,
+        "La Malla Coanda es una solución avanzada para la filtración de agua, diseñada para optimizar el proceso de captación y reducir el mantenimiento en sistemas de tratamiento. Su diseño eficiente permite una mayor purificación del agua, lo que contribuye a la sostenibilidad y al ahorro de recursos naturales.",
+      location: "",
+      visual: Malla,
     },
     {
-      title: "Wind Farm Innovation",
+      title: "Sensores IoT",
       description:
-        "Revolutionizing wind energy with our innovative wind farm. Discover how [Company Name] is harnessing the power of the wind to create a greener and more sustainable future.",
-      location: "Scottish Highlands, United Kingdom",
-      visual: img2,
+        "Nuestros sensores IoT permiten monitorear en tiempo real los procesos de tratamiento de agua, mejorando la eficiencia operativa y reduciendo el desperdicio. Esta tecnología avanzada ayuda a tomar decisiones informadas para un uso más eficiente de los recursos y a mitigar el impacto ambiental.",
+      location: "",
+      visual: Sensores,
     },
     {
-      title: "Hydropower Plant Success",
+      title: "Automatizacion y Control",
       description:
-        "A journey into our hydropower success story. Explore how [Company Name] transforms the energy of flowing water into a reliable and eco-friendly power source.",
-      location: "Amazon Rainforest, South America",
-      visual: img3,
+        "La automatización y el control inteligente optimizan las plantas de tratamiento de agua y energía, garantizando operaciones más eficientes y menos intervenciones manuales. Gracias a la integración de tecnologías avanzadas, podemos reducir el consumo de energía y mejorar la calidad del agua tratada.",
+      location: "",
+      visual: Auto,
     },
   ],
   callToAction: "Embark on a Green Energy Journey with [Company Name]",

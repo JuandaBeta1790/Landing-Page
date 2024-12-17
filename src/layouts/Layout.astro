@@ -12,26 +12,26 @@ const { title } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/energy-template/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAArlBMVEVHcEwARfcAU/QAvtoAOfUA e+wAUvUAgO80k9D/PAAAd+MJNPIAmPEAXucAru4IL/UAx+MA094A0N4Am9YA0tofvLYGtb8As9QA ztOWnoZ5mZjFimS5e2v8aTD/RBT/OwbqXT/9TyP/LwD/UAQA0doAteUAw9sAkO0AZPUAbu8AougA zN4Ayc6sjHbdc07/SAr9WiQAWPcAkN4AqtsAv7+FnpBWsKVHrKvyaTvMe1wfFFnNAAAAJHRSTlMA +2st/D75/gfx9SfFvHfg7BKrglnP58qX97cweWkP2T38knhkDu/8AAAAfUlEQVQYlU3OxxKCQBBF 0SYOY8SsIKLSM+RgQvz/H3NF1evdPfUWTUS0tA3XJLipbTwyB8V0s1x4KPNcpDMEbyLSYoHiPAul LJTNS2kfgQ66LNcIlmbmFcC+Yt5CB993dYQ+159+B31tfvUJXr3cuqEJYRC3bRdB36WUyRh/Y3MJ lBUV3T4AAAAASUVORK5CYII=" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <meta
       name="description"
       content="Energy template made with ASTROJS and TAILWINDCSS"
     />
-    <title>Energy template - {title}</title>
+    <title>Telemetrik AWS - {title}</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="/energy-template/style/custom.css" />
+    <link rel="stylesheet" href="/style/custom.css" />
   </head>
   <body
     class="overflow-hidden overflow-y-auto bg-base dark:bg-base-dark text-accent dark:text-accent-light min-h-screen"
   >
     <Navbar />
     <slot />
-    <Footer />
+    
   </body>
   <script>
     detectSystemTheme();

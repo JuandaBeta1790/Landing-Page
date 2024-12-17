@@ -58,12 +58,12 @@ export default {
           200: "#c2f1c1",
           300: "#92e491",
           400: "#5acf59",
-          500: "#34b433",
-          DEFAULT: "#228B22",
-          600: "#228b22",
-          700: "#207521",
-          800: "#1e5d1f",
-          900: "#1a4d1b",
+          500: "#2045F3",
+          DEFAULT: "#2045F3",
+          600: "#2045F3",
+          700: "#1a37e2",
+          800: "#1632cc",
+          900: "#0e28b8",
           950: "#092a0b",
         },
         secondary: {
@@ -72,31 +72,46 @@ export default {
           200: "#b5eaff",
           300: "#83dfff",
           400: "#48cbff",
-          DEFAULT: "#1eadff",
-          500: "#1eadff",
-          600: "#068fff",
-          700: "#007bff",
-          800: "#085ec5",
-          900: "#0d519b",
-          950: "#0e315d",
+          DEFAULT: "#01037D",
+          500: "#01037D",
+          600: "#01037D",
+          700: "#000a6b",
+          800: "#00095b",
+          900: "#00044a",
+          950: "#000224",
         },
         cta: {
-          50: "#ffffe7",
-          100: "#feffc1",
-          200: "#fffd86",
-          300: "#fff441",
-          400: "#ffe60d",
-          DEFAULT: "#ffd700",
-          500: "#ffd700",
-          600: "#d19e00",
-          700: "#a67102",
-          800: "#89580a",
-          900: "#74480f",
-          950: "#442604",
+          50: "#f0f9fb",  // Tonos claros iniciales
+          100: "#e1f4f6",
+          200: "#b3e5e8",
+          300: "#80d6da",
+          400: "#4dc7cd",
+          DEFAULT: "#FF4308",  // Color base
+          500: "#FF4308",
+          600: "#008d9f",
+          700: "#00787a",
+          800: "#005d5a",
+          900: "#00443b",
+          950: "#002c24",
+      },
+
+      
+      
+        complementary1: {
+          DEFAULT: "#FF4308",
+          500: "#FF4308",
+        },
+        complementary2: {
+          DEFAULT: "#0084E7",
+          500: "#0084E7",
         },
       },
       screens: {
-        midmd: "880px",
+        midmd: "880px",//Portatil
+        sm:"480px",//Celular
+        pm:"1024px",//Pantalla media
+        gm:"1440px",//Pantalla escritorio
+        rm:"1920px"//Pantalla HD
       },
       boxShadow: {
         aesthetic: "0 3px 10px rgb(0,0,0,0.2)",
