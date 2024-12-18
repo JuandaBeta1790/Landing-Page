@@ -31,13 +31,13 @@ export interface Props {
 const { className = "" } = Astro.props;
 ---
 
-<section class=`relative  ${className} w-full h-[80vh]` id="hero">
-  <div class="w-full h-[90vh] pt-[100px]">
+<section class=`relative  ${className} w-full h-[80vh] dm:h-[90vh]` id="hero">
+  <div class="w-full h-full pt-[100px] w-full h-full pt-[100px] p-1 md:p-25">
     <div
       class="w-full h-full grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900"
     >
-      <div class="justify-center flex flex-col text-center md:ml-auto ">
-        <Title className="">
+      <div class="flex flex-col justify-center text-center  md:ml-auto px-4 dm:px-1 ">
+        <Title className="text-l md:text-2x1 lg:text-l">
           {heroSection.headline1}
           <GradiantText
             >{" " + heroSection.headline2}
@@ -46,26 +46,26 @@ const { className = "" } = Astro.props;
             {" "+ heroSection.headline4}
           </GradiantText>
         </Title>
-        <SubTitle className=" mt-10 leading-9  text-center" >
+        <SubTitle className=" mt-10 text-lg md:text-xl leading-8 md:leading-10" >
           {heroSection.subheading1}
           <br />
           {heroSection.subheading2}<br />
           {heroSection.subheading3}
         </SubTitle>
          <!-- Agregar las imágenes aquí -->
-         <div class="flex justify-center gap-10 mt-10">
+         <div class="flex justify-center gap-10 mt-8">
           <div class="relative  overflow-hidden">
             <img 
               src="/images/badge.png" 
               alt="Descripción de la imagen" 
-              class="h-40 w-40" 
+              class="h-24 w-24 md:h-40 md:w-40 object-contain" 
             />
           </div>
           <div class="relative  overflow-hidden">
             <img 
               src="/images/saas.png" 
               alt="Descripción de la imagen" 
-              class="h-40 w-40" 
+              class="h-24 w-24 md:h-40 md:w-40 object-contain" 
             />
           </div>
         </div>
@@ -75,10 +75,10 @@ const { className = "" } = Astro.props;
         <LazyImage
           src={Ocean}
           alt="A picture of a wind turbine."
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover dm:hidden midmd:block" 
         />
         <svg
-          class="fill-base-100 dark:fill-base-dark-900 z-10 absolute top-0 start-0 h-full hidden md:block"
+          class="fill-base-100 dark:fill-base-dark-900 z-10 absolute top-0 left-0 h-full hidden md:block"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 500 400"
         >

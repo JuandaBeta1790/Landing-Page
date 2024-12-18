@@ -16,15 +16,13 @@ const animation = `duration-300 ease-linear`;
 ---
 
 <div class=`
-  ${animation} group
-  relative overflow-hidden rounded-lg h-full
-  `>
+  ${animation} group relative overflow-hidden rounded-lg h-full sm:h-auto sm:max-w-xs sm:mx-auto content-center`>
   <LazyImage
     src={visual}
     alt="Hero"
     height="400"
     class=`
-    w-full h-96 object-cover
+    w-full sm:h-72 md:h-96 object-cover
     ${animation} group-hover:scale-125
     `
   />
@@ -54,15 +52,15 @@ const animation = `duration-300 ease-linear`;
     ${animation}
     `
   >
-    <div class=`m-6 text-white ${animation}`>
-      <Title3 className="mb-0">
+    <div class=`m-4 text-white ${animation}`>
+      <Title3 className="mb-0 text-sm sm:text-base">
         {title}
       </Title3>
     </div>
     <div
-      class=`self-baseline m-6 opacity-0 group-hover:opacity-100 ${animation}`
+      class=`self-baseline m-4 opacity-0 group-hover:opacity-100 ${animation}`
     >
-      <div class="text-md text-white justify-start text-justify">
+      <div class="text-sm sm:text-base text-white justify-start text-justify">
         {description}
       </div>
     </div>

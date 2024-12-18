@@ -19,21 +19,21 @@ const { className } = Astro.props;
   <Container>
     <Title2>{environmentalImpactSection.title}</Title2>
   </Container>
-  <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12 ">
+  <Container className="flex flex-col midmd:flex-row gap-10 lg:gap-12">
     <!-- <div
       class="max-w-md mx-auto flex midmd:w-7/12 lg:w-3/4 flex-col align-self-start text-start"
     > -->
     <div
-      class="max-w-md mr-auto w-11/12 flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col text-justify"
+      class=" mr-auto w-11/12 flex-1 flex midmd:w-7/12 lg:w-1/2 flex-col text-justify ml-auto"
     >
       <SubTitle2>
         {environmentalImpactSection.subheading1_1}
         <GradiantText>{environmentalImpactSection.subheading1_2}</GradiantText>
       </SubTitle2>
-      <Paragraph>
+      <Paragraph >
         {environmentalImpactSection.description}
       </Paragraph>
-      <ul class="mt-5 space-y-10 text-heading-5">
+      <ul class="mt-5 space-y-10 text-heading-5 ">
         {
           environmentalImpactSection.impactPoints.map((point) => (
             <li>
@@ -52,7 +52,7 @@ const { className } = Astro.props;
       </div>
     </div>
     <div
-      class="midmd:max-w-none flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto"
+      class="midmd:max-w-none flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto mx-auto"
     >
       <!-- <div
       class="max-w-md mx-auto midmd:max-w-none lg:mx-0 lg:pr-10 xl:pr-2 flex w-11/12 midmd:w-5/12 lg:w-1/4 midmd:h-[587px]"
@@ -68,7 +68,7 @@ const { className } = Astro.props;
         src={environmentalImpactSection.visual}
         alt="environmental impact"
         width="700"
-        class="w-full h-full object-cover rounded-2xl"
+        class="w-full h-full object-cover rounded-2xl dm:hidden midmd:block"
       />
     </div>
   </Container>

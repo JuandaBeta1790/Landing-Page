@@ -19,29 +19,32 @@ const { title, description, visual, position, phone } = Astro.props;
 <div
   class="group overflow-hidden rounded-lg h-full flex flex-col dark:bg-base-dark-800 shadow-lg dark:shadow-dark ring-1 ring-black/5 pt-2"
 >
-  <div class="grid grid-cols-1 content-between h-full mx-6 mb-6">
-    <div class="flex">
-      <div class="h-[50px] w-[50px] m-6">
+  <div class="grid grid-cols-1 content-between h-full sm:mx-1 mb-6">
+    <div class="flex flex-col sm:flex-row items-center">
+      <div class="h-[50px] w-[50px] sm:h-[60px] sm:w-[60px] m-4 sm:m-6">
         <div
           class="fill:accent dark:fill-accent-light dark:opacity-70 shrink-0 h-full"
         >
           <Fragment set:html={visual} />
         </div>
       </div>
-      <Title4 className="dark:opacity-70 self-center">
+      <Title4 className="dark:opacity-70 self-center text-center sm:text-left">
         {title}
       </Title4>
     </div>
     <!-- Aquí colocamos el campo position entre el title y description -->
-    <p class="text-center font-medium text-xl mt-15 dark:text-dark">
-      <a href="https://wa.me/573148622451" target="_blank" class="no-style" style="position:relative; z-index: 10; font-family: Verdana, Geneva, Tahoma, sans-serif;">
+    <p class="text-center font-medium text-xl mt-6 sm:mt-8 dark:text-dark">
+      <a href="https://wa.me/573148622451" 
+      target="_blank"
+      class="no-style" 
+      style="position:relative; z-index: 10; font-family: Verdana, Geneva, Tahoma, sans-serif;">
         +57 314 862 24 51
       </a>
     </p>
     
     
     </p>
-    <p class="text-center font-medium text-xl mt-10 dark:text-primary">
+    <p class="text-center font-medium text-xl mt-6 sm:mt-8 dark:text-primary">
       {position}  {/* Mostramos el cargo aquí */}
     </p>
 
