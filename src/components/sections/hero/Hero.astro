@@ -31,12 +31,12 @@ export interface Props {
 const { className = "" } = Astro.props;
 ---
 
-<section class=`relative  ${className} w-full h-[80vh] dm:h-[120vh]` id="hero">
+<section class=`relative  ${className} w-full h-[80vh] dm:h-[120vh] dm:w-full` id="hero">
   <div class="w-full h-full pt-[100px] w-full h-full pt-[100px] p-1 md:p-25">
     <div
       class="w-full h-full grid grid-cols-1 md:grid-cols-2 justify-end bg-base-100 dark:bg-base-dark-900"
     >
-      <div class="flex flex-col justify-center text-center  md:ml-auto px-4 dm:px-1 ">
+      <div class="flex flex-col justify-center text-center md:ml-auto px-4 dm:px-1  dm:ml-auto">
         <Title className="text-l md:text-2x1 lg:text-l">
           {heroSection.headline1}
           <GradiantText
