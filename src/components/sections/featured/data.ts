@@ -2,7 +2,7 @@
 import Malla2 from "./assets/MallaCoanda1.jpg";
 import Auto from "./assets/Auto.jpg";
 import Sensor from "./assets/Sensor.jpg";
-import Sensores from "./assets/sensores.jpg";
+import Sensores from "./assets/Sensores.jpg";
 import Malla from "./assets/MallaCoanda.jpg";
 
 
