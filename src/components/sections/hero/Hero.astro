@@ -1,6 +1,6 @@
 ---
 import { Image, Picture } from "astro:assets";
-import Ocean from "./public/images/Ocean.png";
+//import Ocean from "/images/Ocean.png";
 import CtaButton from "../../shared/CtaButton.astro";
 import GradiantText from "../../shared/GradiantText.astro";
 import SubTitle from "../../shared/SubTitle.astro";
@@ -71,7 +71,7 @@ const { className = "" } = Astro.props;
       </div>
       <div class="flex relative pt-10 md:p-0">
         <LazyImage
-          src={Ocean}
+          src="/images/Ocean.png"
           alt="A picture of a wind turbine."
           className="w-full h-full object-cover"
         />
