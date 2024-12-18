@@ -19,7 +19,7 @@ const { className } = Astro.props;
 
 <section id="innovations" class=`${className}`>
   <Container
-    className="mx-auto flex flex-col items-center justify-center text-center"
+    className="mx-auto flex flex-col items-center justify-center text-center dm:-mt-4"
   >
     <Title2>{innovationsSection.title}</Title2>
     <SubTitle2>
@@ -36,10 +36,11 @@ const { className } = Astro.props;
         return (
           <div class={`w-100 ${bgColor} pb-0`}>
             <div
-              class={`flex flex-col gap-10 lg:gap-12 ${flexRow} mx-auto max-w-7xl w-full`}
+              class={`flex flex-col gap-10 lg:gap-12 ${flexRow} mx-auto max-w-7xl w-full `}
             >
-              <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0 lg:pr-10 xl:pr-2 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto mt-20">
-                <div class="w-full max-h-[50vh] sm:h-96 midmd:h-full relative mt-20">
+              <div class="max-w-md mx-auto midmd:max-w-none lg:mx-0 lg:pr-10 xl:pr-2 flex w-11/12 midmd:w-5/12 lg:w-1/2 midmd:h-auto mt-20  ">
+                <div class="w-full max-h-[50vh] sm:h-96 midmd:h-full relative mt-20 dm:-mt-12 ">
+
                   {/* Usa HoverImage en lugar de LazyImage */}
                   {solution.hoverVisual ? (
                     <HoverImage
