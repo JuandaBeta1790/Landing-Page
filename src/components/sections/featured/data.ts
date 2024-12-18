@@ -1,9 +1,9 @@
 
-import Malla2 from "/public/images/MallaCoanda1.jpg";
-import Auto from "/public/images/Auto.jpg";
-import Sensor from "/public/images/Sensor.jpg";
-import Sensores from "/public/images/sensores.jpg";
-import Malla from "/public/images/MallaCoanda.jpg";
+import Malla2 from "./assets/MallaCoanda1.jpg";
+import Auto from "./assets/Auto.jpg";
+import Sensor from "./assets/Sensor.jpg";
+import Sensores from "./assets/sensores.jpg";
+import Malla from "./assets/MallaCoanda.jpg";
 
 
 export const projectsSection = {

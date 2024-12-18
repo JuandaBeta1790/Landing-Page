@@ -1,10 +1,10 @@
-import Retiro from "./public/images/Retiro.png";
-import Palmitas from "./public/images/Palmitas.png";
-import SanCristobal from "./public/images/SanCristobal.png";
-import SanJero from "./public/images/SanJeronimo.png";
-import GrafRet from "./public/images/GrafRetiro.png";
-import grafsan from "./public/images/GrafSanJero1.png";
-import GrafPalm from "./public/images/GrafPalmita.png";
+import Retiro from "./assets/Retiro.png";
+import Palmitas from "./assets/Palmitas.png";
+import SanCristobal from "./assets/SanCristobal.png";
+import SanJero from "./assets/SanJeronimo.png";
+import GrafRet from "./assets/GrafRetiro.png";
+import grafsan from "./assets/GrafSanJero1.png";
+import GrafPalm from "./assets/GrafPalmita.png";
 
 export const innovationsSection = {
   title: "Casos de Éxito",

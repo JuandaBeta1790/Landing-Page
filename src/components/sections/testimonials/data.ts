@@ -1,9 +1,9 @@
 
-import epm from "./public/images/epm.jpg";
-import conconcreto from "./public/images/conconcreto.png";
-import antioquiagold from "./public/images/antioquiagold.png";
-import aassa from "./public/images/aassa1.jpg";
-import AAS from "./public/images/AAS.png";
+import epm from "./assets/epm.jpg";
+import conconcreto from "./assets/conconcreto.png";
+import antioquiagold from "./assets/antioquiagold.png";
+import aassa from "./assets/aassa1.jpg";
+import AAS from "./assets/AAS.png";
 
 
 export const testimonialsSection = {

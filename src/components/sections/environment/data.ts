@@ -1,4 +1,4 @@
-import Agua from "/public/images/Retos.jpeg";
+import Agua from "./assets/Retos.jpeg";
 
 export const environmentalImpactSection = {
   title: "Impacto Ambiental de Telemetrik",

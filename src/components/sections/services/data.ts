@@ -1,10 +1,10 @@
 
-import api from "./public/images/API.png";
-import lambda from "./public/images/Lambda.png";
-import iot from "./public/images/IoT.png";
-import ec2 from "./public/images/EC2.png";
-import rds from "./public/images/RDS.png";
-import s3 from "./public/images/S3.png";
+import api from "./assets/API.png";
+import lambda from "./assets/Lambda.png";
+import iot from "./assets/IoT.png";
+import ec2 from "./assets/EC2.png";
+import rds from "./assets/RDS.png";
+import s3 from "./assets/S3.png";
 
 export const servicesSectionData = {
   title: "Telemetrik + AWS",
