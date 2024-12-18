@@ -109,7 +109,7 @@ export default {
       screens: {
         midmd: "880px",//Portatil
         
-        dm:"390px",//celular grande o tablet
+        dm:"370px",//celular grande o tablet
         pm:"1024px",//Pantalla media
         gm:"1440px",//Pantalla escritorio
         rm:"1920px"//Pantalla HD
