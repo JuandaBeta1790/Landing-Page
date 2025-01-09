@@ -3,5 +3,9 @@
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "react"
-  }
+  },
+  "include": [
+    "src/layouts/type.d.ts",  // Incluye explícitamente el archivo de tipos
+    "src/**/*"  // También incluye todo el código fuente
+  ]
 }
